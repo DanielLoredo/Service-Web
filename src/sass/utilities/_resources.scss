@@ -1,0 +1,101 @@
+@use './variables' as v;
+
+// BUTTON
+.btn {
+  &--white {
+    background-color: v.$color-white;
+    color: v.$color-black;
+
+    &:after {
+      background-color: v.$color-white;
+    }
+  }
+
+  &--purple {
+    background-color: v.$color-secondary;
+    color: v.$color-white;
+    &:after {
+      background-color: v.$color-secondary;
+    }
+  }
+
+  &,
+  &:link,
+  &:visited {
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: 10rem;
+    display: inline-block;
+    text-transform: uppercase;
+
+    transition: all 0.2s;
+    position: relative;
+
+    // <button> tag Element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(v.$shadow-color, 0.5);
+
+    &::after {
+      opacity: 0;
+      transform: scaleX(1.4) scaleY(1.6);
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(v.$shadow-color, 0.5);
+  }
+
+  &--animated {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+
+    transition: all 0.4s;
+  }
+}
+
+// HEADING SECONDARY
+.heading-secondary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+
+  background-image: linear-gradient(
+    to right,
+    v.$color-primary-light,
+    v.$color-secondary-light
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(-2deg) skewX(-15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}

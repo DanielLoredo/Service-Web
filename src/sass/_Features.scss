@@ -1,0 +1,53 @@
+@use "./utilities/variables" as v;
+
+.section-features {
+  padding: 10rem 0rem 42rem 0rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(v.$color-primary, 0.7),
+      rgba(v.$color-secondary, 0.7)
+    ),
+    url(./../img/background.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  transform: skewY(-7deg) translateY(4rem);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.feature-box {
+  background-color: rgba(v.$color-white, 0.8);
+  border-radius: 3px;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0rem 1.5rem 4rem rgba(v.$color-black, 0.8);
+
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.01) translateY(-2rem);
+  }
+
+  &__icon {
+    font-size: 6rem;
+    display: inline-block;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(v.$color-primary, 0.7),
+      rgba(v.$color-secondary, 0.7)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    color: rgba(v.$color-black, 0.9);
+  }
+}
