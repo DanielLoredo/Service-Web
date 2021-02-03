@@ -17,7 +17,7 @@ class Header extends React.Component {
             <span className="head-primary--sub">Soporte Técnico del bueno</span>
           </h1>
 
-          <a href="#" className="btn btn--white btn--animated">
+          <a href="/" className="btn btn--white btn--animated">
             Llama Ya
           </a>
         </div>

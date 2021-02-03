@@ -8,11 +8,7 @@ class StoryCard extends React.Component {
       <div className="row margin-bottom-card">
         <div className="story">
           <figure className="story__figure">
-            <img
-              src={this.props.image}
-              alt="User image"
-              className="story__image"
-            />
+            <img src={this.props.image} alt="User" className="story__image" />
             <figcaption className="story__caption">
               {this.props.userName}
             </figcaption>

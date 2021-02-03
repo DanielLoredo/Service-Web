@@ -16,27 +16,27 @@ class Footer extends React.Component {
             <div className="footer__navigation">
               <ul className="footer__list">
                 <li className="footer__item">
-                  <a href="#" className="footer__link">
+                  <a href="/" className="footer__link">
                     Company
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a href="#" className="footer__link">
+                  <a href="/" className="footer__link">
                     Contact
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a href="#" className="footer__link">
+                  <a href="/" className="footer__link">
                     Careers
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a href="#" className="footer__link">
+                  <a href="/" className="footer__link">
                     Private Policy
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a href="#" className="footer__link">
+                  <a href="/" className="footer__link">
                     Terms
                   </a>
                 </li>
@@ -46,12 +46,12 @@ class Footer extends React.Component {
           <div className="column-1-of-2">
             <div className="footer__copyright">
               Lorem Ipsum is simply{" "}
-              <a href="#" className="footer__link">
+              <a href="/" className="footer__link">
                 dummy text
               </a>
               of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard{" "}
-              <a href="#" className="footer__link">
+              <a href="/" className="footer__link">
                 dummy text
               </a>{" "}
               ever since the 1500s, when an unknown printer took a galley of

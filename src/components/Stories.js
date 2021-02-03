@@ -40,7 +40,7 @@ class Stories extends React.Component {
           type and scrambled it to make a type specimen book."
         />
         <div className="u-center-text">
-          <a className="btn-text" href="#" alt="">
+          <a className="btn-text" href="/" alt="">
             Read all stories &rarr;
           </a>
         </div>

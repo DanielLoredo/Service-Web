@@ -62,12 +62,12 @@ class Tours extends React.Component {
         <div className="popup" id="popup">
           <div className="popup__content">
             <div className="popup__left">
-              <img src={img1} className="popup__img" alt="dog picture"></img>
-              <img src={img2} className="popup__img" alt="dog picture"></img>
+              <img src={img1} className="popup__img" alt="dog"></img>
+              <img src={img2} className="popup__img" alt="dog"></img>
             </div>
 
             <div className="popup__right">
-              <a href="#section-tours" alt="" className="popup__close">
+              <a href="#section-tours" alt="popup" className="popup__close">
                 &times;
               </a>
               <div className="heading-secondary  u-margin-bottom-xsmall">
@@ -86,7 +86,7 @@ class Tours extends React.Component {
                 popularised in the 1960s with the release of Letraset sheets
                 containing Lorem Ipsum passages, and more recently with desktop
               </p>
-              <a className="btn btn--purple" href="#" alt="">
+              <a className="btn btn--purple" href="/" alt="Button">
                 Contrata Ya!
               </a>
             </div>

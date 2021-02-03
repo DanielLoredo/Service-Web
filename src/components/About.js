@@ -3,8 +3,8 @@ import "./../sass/_AboutStyle.scss";
 import "./../sass/utilities/_grid.scss";
 import "./../sass/utilities/_resources.scss";
 import img_corgi_1 from "./../img/corgi-1.jpg";
-import img_corgi_2 from "./../img/corgi-2.jpg";
-import img_corgi_3 from "./../img/corgi-3.jpg";
+import img_corgi_2 from "./../img/corgi-1.jpg";
+import img_corgi_3 from "./../img/corgi-1.jpg";
 
 class About extends React.Component {
   render() {
@@ -33,7 +33,7 @@ class About extends React.Component {
               ever since the 1500s
             </p>
 
-            <a href="#" alt="" className="btn-text">
+            <a href="/" alt="" className="btn-text">
               Más información &rarr;
             </a>
           </div>
@@ -41,12 +41,12 @@ class About extends React.Component {
           <div className="column-1-of-2">
             <div className="composition">
               <img
-                src={img_corgi_3}
+                src={img_corgi_1}
                 className="composition__photo composition__photo-1"
                 alt="corgi 1"
               />
               <img
-                src={img_corgi_3}
+                src={img_corgi_2}
                 className="composition__photo composition__photo-2"
                 alt="corgi 2"
               />
