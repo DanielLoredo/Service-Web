@@ -2,9 +2,9 @@ import React from "react";
 import "./../sass/_AboutStyle.scss";
 import "./../sass/utilities/_grid.scss";
 import "./../sass/utilities/_resources.scss";
-import img_corgi_1 from "./../img/corgi-1.jpg";
-import img_corgi_2 from "./../img/corgi-1.jpg";
-import img_corgi_3 from "./../img/corgi-1.jpg";
+import img_corgi_1 from "./../img/corgi-3.jpg";
+import img_corgi_2 from "./../img/corgi-3.jpg";
+import img_corgi_3 from "./../img/corgi-3.jpg";
 
 class About extends React.Component {
   render() {
