@@ -1,3 +1,4 @@
+@use "./variables" as v;
 @import "./queryMixins";
 
 *,
@@ -34,4 +35,9 @@ body {
   padding: 0rem;
 
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: v.$color-secondary;
+  color: v.$color-white;
 }
