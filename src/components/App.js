@@ -1,5 +1,7 @@
 import React from "react";
+
 import "./../sass/utilities/_grid.scss";
+import "./../sass/utilities/_base.scss";
 
 import Menu from "./Menu";
 import Header from "./Header";

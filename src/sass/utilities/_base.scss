@@ -1,0 +1,37 @@
+@import "./queryMixins";
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  color: #777;
+  font-weight: 400;
+  padding: 0rem;
+
+  box-sizing: border-box;
+}
