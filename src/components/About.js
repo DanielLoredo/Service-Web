@@ -41,6 +41,30 @@ class About extends React.Component {
           <div className="column-1-of-2">
             <div className="composition">
               <img
+                srcset={`${img_corgi_1} 300w, ${img_corgi_1} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="corgi 1"
+                className="composition__photo composition__photo-1"
+                src={img_corgi_1}
+              />
+
+              <img
+                srcset={`${img_corgi_2} 300w, ${img_corgi_2} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="corgi 2"
+                className="composition__photo composition__photo-2"
+                src={img_corgi_2}
+              />
+
+              <img
+                srcset={`${img_corgi_3} 300w, ${img_corgi_3} 1000w`}
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="corgi 3"
+                className="composition__photo composition__photo-3"
+                src={img_corgi_3}
+              />
+
+              {/* <img
                 src={img_corgi_1}
                 className="composition__photo composition__photo-1"
                 alt="corgi 1"
@@ -54,7 +78,7 @@ class About extends React.Component {
                 src={img_corgi_3}
                 className="composition__photo composition__photo-3"
                 alt="corgi 3"
-              />
+              /> */}
             </div>
           </div>
         </div>

@@ -9,7 +9,17 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="footer__logo-box">
-          <img src={footer_logo} className="footer__logo" alt="Full Logo"></img>
+          <picture className="footer__logo">
+            <source
+              srcset={`${footer_logo} 1x, ${footer_logo} 2x`}
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcset={`${footer_logo} 1x, ${footer_logo} 2x`}
+              className="footer__logo"
+              alt="Full Logo"
+            ></img>
+          </picture>
         </div>
         <div className="row">
           <div className="column-1-of-2">

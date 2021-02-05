@@ -8,12 +8,22 @@
       rgba(variable.$color-primary, 0.75),
       rgba(variable.$color-secondary, 0.75)
     ),
-    url("./../img/lazy-dog.jpg");
+    url("./../img/lazy-dog.jpg"); //Change to smaller image
   background-size: cover;
   background-position: center;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  // For high resolution and big devices
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(variable.$color-primary, 0.75),
+        rgba(variable.$color-secondary, 0.75)
+      ),
+      url("./../img/lazy-dog.jpg");
+  }
 
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
